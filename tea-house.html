@@ -14,20 +14,20 @@
     <!-- tailwind cdn -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- custome tailwind css setup -->
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        clifford: '#da373d',
-                    },
-                    fontFamily: {
-                        manrope: ["Manrope", "sans-serif"]
-                    },
-                }
-            }
-        }
-    </script>
+   export default {
+  content: ["./*.html"], // মূল ফোল্ডারের HTML স্ক্যান করবে
+  theme: {
+    extend: {
+      colors: {
+        clifford: '#da373d',
+      },
+      fontFamily: {
+        manrope: ["Manrope", "sans-serif"],
+      },
+    },
+  },
+  plugins: [],
+}
 </head>
 
 <body class="font-manrope">
